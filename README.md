@@ -1,1 +1,0 @@
-echo "# Max-Evolve" >> README.md
