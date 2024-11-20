@@ -1,0 +1,43 @@
+.Priority{
+    padding-top: 140px;
+    background-color: #baf3fc;
+}
+.main-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Legaly h2 {
+    font-family: Lora, sans-serif;
+    font-size: 50px;
+}
+.Legal h1 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.main-flex {
+    border-bottom: 1px solid;
+}
+.overview-contant h5 {
+    font-size: 30px;
+    line-height: 45px;
+
+}
+.overview-contant {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+overview-contant p {
+    color: #000000;
+}
+.layout-flow {
+    text-align: right;
+    width: 50%;
+}
+.layout-flow img {
+    width: 60%;
+    margin-left: auto;
+    padding-bottom: 30px;
+}

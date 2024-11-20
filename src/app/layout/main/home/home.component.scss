@@ -1,0 +1,110 @@
+
+.banner-section{
+    padding-top: 180px;
+    padding-bottom: 100px;
+    background-color: #087c99;
+}
+.center-content h2 {
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #151515;
+}
+ span {
+    color: #fbff4d;
+    font-weight: 700;
+}
+.center-content svg path {
+    fill: #191919;
+}
+
+.center-content h2 span {
+    color: #e9ee26;
+}
+
+.center-content .btn-schedule span {
+    background-color: #e9ee26;
+    font-weight: 800;
+    color: #087c99;
+}
+.center-content .btn-schedule::after {
+    background-color: #44450f;
+}
+
+.roteateas {
+    animation: rotation 5s infinite linear;
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+.cercil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cercil img {
+    width: 120px;
+    height: 115px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.amimeted-logo {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+.pat-mtop {
+    margin-top: 40px;
+}
+.amimeted-logo svg {
+    height: 100px;
+    width: 520px;
+}
+
+.mortgage-section {
+    background: #e9fbee;
+    padding: 7rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mortgage-section h1 {
+    font: bold 2.5rem 'Arial', sans-serif;
+    color: #4A256C;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .graphics {
+    position: relative;
+    width: 40%;
+    text-align: right;
+  }
+
+  
+  .left-content {
+    width: 60%;
+}
+
+.graphics img {
+    width: 80%;
+    margin-left: auto;
+}
+.box-design h2 {
+    margin-bottom: 0 !important;
+}
+

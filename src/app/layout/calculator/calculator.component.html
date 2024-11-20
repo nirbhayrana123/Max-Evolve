@@ -1,0 +1,523 @@
+<div class="row mt-5 ml-0 mr-0">
+    <div class="col-md-3"></div>
+    <p>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    <div class=" col-md-6 " >
+   
+           
+         
+        
+        <!-- <tabset class="member-tabset">
+            <tab heading="Future Value">
+                <br>
+                <form [formGroup]="futureValueForm" (ngSubmit)="FutureValue()">
+                    <div class="row">
+                        <div class="col-md-4">Present Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="presentValue" class="form-control">
+                            <div *ngIf="f['presentValue'].touched && f['presentValue'].invalid">
+                                <div *ngIf="f['presentValue'].errors && f['presentValue'].errors['required']">
+                                    <span style="color: red;">Present value cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Payment:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="payment" class="form-control">
+                            <div *ngIf="f['payment'].touched && f['payment'].invalid">
+                                <div *ngIf="f['payment'].errors && f['payment'].errors['required']">
+                                    <span style="color: red;">Payment value cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>per year</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Interest Rate:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldPer">%</span>
+                            <input type="number" formControlName="interestRate" class="form-control">
+                            <div *ngIf="f['interestRate'].touched && f['interestRate'].invalid">
+                                <div *ngIf="f['interestRate'].errors && f['interestRate'].errors['required']">
+                                    <span style="color: red;">Interest Rate Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Periods:</div>
+                        <div class="col-md-4">
+                            <input type="number" formControlName="periods" class="form-control">
+                            <div *ngIf="f['periods'].touched && f['periods'].invalid">
+                                <div *ngIf="f['periods'].errors && f['periods'].errors['required']">
+                                    <span style="color: red;">Periods Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>Years</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Compound Interest:</div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="bp" formControlName="compoundInterest">
+                                <option value="">Select Option</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Quaterly</option>
+                                <option value="6">Semi Annually</option>
+                                <option value="12">Anually</option>
+                            </select>
+                            <div *ngIf="f['compoundInterest'].touched && f['compoundInterest'].invalid">
+                                <div *ngIf="f['compoundInterest'].errors && f['compoundInterest'].errors['required']">
+                                    <span style="color: red;">Compound Interest Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-primary" (click)="formReset('future')">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </tab>
+            <tab heading="Present Value">
+                <br>
+                <form [formGroup]="presentValueForm" (ngSubmit)="PresentValue()">
+                    <div class="row">
+                        <div class="col-md-4">Future Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="futureValue" class="form-control">
+                            <div *ngIf="pr['futureValue'].touched && pr['futureValue'].invalid">
+                                <div *ngIf="pr['futureValue'].errors && pr['futureValue'].errors['required']">
+                                    <span style="color: red;">Future value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Payment:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="payment" class="form-control">
+                            <div *ngIf="pr['payment'].touched && pr['payment'].invalid">
+                                <div *ngIf="pr['payment'].errors && pr['payment'].errors['required']">
+                                    <span style="color: red;">Payment Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>per year</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Interest Rate:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldPer">%</span>
+                            <input type="number" formControlName="interestRate" class="form-control">
+                            <div *ngIf="pr['interestRate'].touched && pr['interestRate'].invalid">
+                                <div *ngIf="pr['interestRate'].errors && pr['interestRate'].errors['required']">
+                                    <span style="color: red;">Interest Rate Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Periods:</div>
+                        <div class="col-md-4">
+                            <input type="number" formControlName="periods" class="form-control">
+                            <div *ngIf="pr['periods'].touched && pr['periods'].invalid">
+                                <div *ngIf="pr['periods'].errors && pr['periods'].errors['required']">
+                                    <span style="color: red;">Period Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>Years</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Compound Interest:</div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="bp" formControlName="compoundInterest">
+                                <option value="">Select Option</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Quaterly</option>
+                                <option value="6">Semi Annually</option>
+                                <option value="12">Anually</option>
+                            </select>
+                            <div *ngIf="pr['compoundInterest'].touched && pr['compoundInterest'].invalid">
+                                <div *ngIf="pr['compoundInterest'].errors && pr['compoundInterest'].errors['required']">
+                                    <span style="color: red;">Compound Interest Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-primary" (click)="formReset('present')">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </tab>
+            <tab heading="Payment">
+                <br>
+                <form [formGroup]="paymentForm" (ngSubmit)="PaymentValue()">
+                    <div class="row">
+                        <div class="col-md-4">Present Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="presentValue" class="form-control">
+                            <div *ngIf="pf['presentValue'].touched && pf['presentValue'].invalid">
+                                <div *ngIf="pf['presentValue'].errors && pf['presentValue'].errors['required']">
+                                    <span style="color: red;">Present value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Future Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="futureValue" class="form-control">
+                            <div *ngIf="pf['futureValue'].touched && pf['futureValue'].invalid">
+                                <div *ngIf="pf['futureValue'].errors && pf['futureValue'].errors['required']">
+                                    <span style="color: red;">Future value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Interest Rate:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldPer">%</span>
+                            <input type="number" formControlName="interestRate" class="form-control">
+                            <div *ngIf="pf['interestRate'].touched && pf['interestRate'].invalid">
+                                <div *ngIf="pf['interestRate'].errors && pf['interestRate'].errors['required']">
+                                    <span style="color: red;">Interest Rate Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Periods:</div>
+                        <div class="col-md-4">
+                            <input type="number" formControlName="periods" class="form-control">
+                            <div *ngIf="pf['periods'].touched && pf['periods'].invalid">
+                                <div *ngIf="pf['periods'].errors && pf['periods'].errors['required']">
+                                    <span style="color: red;">Periods Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>Years</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Compound Interest:</div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="bp" formControlName="compoundInterest">
+                                <option value="">Select Option</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Quaterly</option>
+                                <option value="6">Semi Annually</option>
+                                <option value="12">Anually</option>
+                            </select>
+                            <div *ngIf="pf['compoundInterest'].touched && pf['compoundInterest'].invalid">
+                                <div *ngIf="pf['compoundInterest'].errors && pf['compoundInterest'].errors['required']">
+                                    <span style="color: red;">Compound Interest Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-primary" (click)="formReset('payment')">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </tab>
+            <tab heading="Rate">
+                <br>
+                <form [formGroup]="rateForm" (ngSubmit)="rateValue()">
+                    <div class="row">
+                        <div class="col-md-4">Future Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="futureValue" class="form-control">
+                            <div *ngIf="rv['futureValue'].touched && rv['futureValue'].invalid">
+                                <div *ngIf="rv['futureValue'].errors && rv['futureValue'].errors['required']">
+                                    <span style="color: red;">Future value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Present Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="presentValue" class="form-control">
+                            <div *ngIf="rv['presentValue'].touched && rv['presentValue'].invalid">
+                                <div *ngIf="rv['presentValue'].errors && rv['presentValue'].errors['required']">
+                                    <span style="color: red;">Present value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Periods:</div>
+                        <div class="col-md-4">
+                            <input type="number" formControlName="periods" class="form-control">
+                            <div *ngIf="rv['periods'].touched && rv['periods'].invalid">
+                                <div *ngIf="rv['periods'].errors && rv['periods'].errors['required']">
+                                    <span style="color: red;">Period Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>Years</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Compound Interest:</div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="bp" formControlName="compoundInterest">
+                                <option value="">Select Option</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Quaterly</option>
+                                <option value="6">Semi Annually</option>
+                                <option value="12">Anually</option>
+                            </select>
+                            <div *ngIf="rv['compoundInterest'].touched && rv['compoundInterest'].invalid">
+                                <div *ngIf="rv['compoundInterest'].errors && rv['compoundInterest'].errors['required']">
+                                    <span style="color: red;">Compound Interest Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-primary" (click)="formReset('rate')">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </tab>
+            <tab heading="Periods">
+                <br>
+                <form [formGroup]="periodsForm" (ngSubmit)="peroidValue()">
+                    <div class="row">
+                        <div class="col-md-4">Future Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="futureValue" class="form-control">
+                            <div *ngIf="periodV['futureValue'].touched && periodV['futureValue'].invalid">
+                                <div *ngIf="periodV['futureValue'].errors && periodV['futureValue'].errors['required']">
+                                    <span style="color: red;">Future Value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Present Value:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldCur">$</span>
+                            <input type="number" formControlName="presentValue" class="form-control">
+                            <div *ngIf="periodV['presentValue'].touched && periodV['presentValue'].invalid">
+                                <div
+                                    *ngIf="periodV['presentValue'].errors && periodV['presentValue'].errors['required']">
+                                    <span style="color: red;">Present Value Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Interest Rate:</div>
+                        <div class="col-md-4">
+                            <span class="bold priceFieldPer">%</span>
+                            <input type="number" formControlName="interestRate" class="form-control">
+                            <div *ngIf="periodV['interestRate'].touched && periodV['interestRate'].invalid">
+                                <div
+                                    *ngIf="periodV['interestRate'].errors && periodV['interestRate'].errors['required']">
+                                    <span style="color: red;">Interest Rate Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><span>Years</span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">Compound Interest:</div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="bp" formControlName="compoundInterest">
+                                <option value="">Select Option</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Quaterly</option>
+                                <option value="6">Semi Annually</option>
+                                <option value="12">Anually</option>
+                            </select>
+                            <div *ngIf="periodV['compoundInterest'].touched && periodV['compoundInterest'].invalid">
+                                <div
+                                    *ngIf="periodV['compoundInterest'].errors && periodV['compoundInterest'].errors['required']">
+                                    <span style="color: red;">Compound Interest Field cannot be empty</span>
+                                </div>
+                            </div>
+                        </div><br>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-primary" (click)="formReset('period')">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </tab>
+        </tabset> -->
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<br>
+<div class="result">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Result</h2>
+        </div>
+    </div>
+    <!-- Start Future -->
+    <ng-container *ngIf="tabType=='future'">
+        <div class="row">
+            <div class="col-md-2">
+                <label>Future Value</label>:
+            </div>
+            <div class="col-md-10"> <label class="labelCal">{{totalInterest| number : '1.2-2'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Total Principal</label>:
+            </div>
+            <div class="col-md-10"> <label class="labelCal">{{principal| number : '1.2-2'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label> Total Interest:</label>
+            </div>
+            <div class="col-md-10"> <label class="labelCal">{{interest| number : '1.2-2'}}</label>
+            </div>
+        </div>
+    </ng-container>
+    <!-- End Future -->
+
+    <!-- Start Present -->
+    <ng-container *ngIf="tabType=='present'">
+        <div class="row">
+            <div class="col-md-2">
+                <label> Present Value:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{presentVal| number : '1.2-2'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                Total Principal:</div>
+            <div class="col-md-10">
+                <label class="labelCal">{{principal| number : '1.2-2'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                Total Interest:
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{interest| number : '1.2-2'}}</label>
+            </div>
+        </div>
+    </ng-container>
+    <!-- End Present -->
+
+    <!-- start Payment -->
+    <ng-container *ngIf="tabType=='paymnent'">
+        <div class="row">
+            <div class="col-md-2">
+                <label> Periodic Payment:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label> Total Payment:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{principal| number : '1.2-2'}}</label>
+            </div>
+        </div>
+    </ng-container>
+    <!-- End Payment -->
+
+    <!-- Start Rate -->
+    <ng-container *ngIf="tabType=='rate'">
+        <div class="row">
+            <div class="col-md-2">
+                <label>Interest Rate:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{principalOne| number : '1.2-2'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Total Interest:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{totalInterest| number : '1.2-2'}}</label>
+            </div>
+        </div>
+    </ng-container>
+    <!-- End Rate -->
+
+    <!-- Start Period -->
+    <ng-container *ngIf="tabType=='period'">
+        <div class="row">
+            <div class="col-md-2">
+                <label> Periodic Payment:</label>
+            </div>
+            <div class="col-md-10">
+                <label class="labelCal">{{periodCount}}</label>
+            </div>
+        </div>
+    </ng-container>
+    <!-- End Period -->
+</div>
+<br><br><br><br><br>
