@@ -2,6 +2,10 @@
 // @import '~bootstrap-icons/font/bootstrap-icons.css';
 
 
+// @import "https://unpkg.com/open-props" layer(design.system);
+// @import "https://unpkg.com/open-props/normalize.dark.min.css" layer(base.normalize);
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap");
+// @import "https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css" layer(design.utilities);
 
 body{
     background-color: #faf5e8;
@@ -1453,7 +1457,7 @@ background-color: #1c76ff;
 }
 .box-design svg {
   position: absolute;
-  right: 277px;
+  right: 377px;
   width: 21px;
 }
 .box-design {

@@ -56,31 +56,40 @@
     }
 }
 
-.amimeted-logo {
+.maxfinac {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.maxfinac img {
+    width: 25%;
+}
+
+.negative-footer-logo {
     text-align: center;
     padding-top: 50px;
     background-color: #ffffff;
     border-radius: 30px;
     padding-bottom: 50px;
 }
-.pat-mtop {
+.footer-logo {
     margin-top: 40px;
 }
-.amimeted-logo svg {
+.negative-footer-logo svg {
     height: 100px;
     width: 520px;
 }
 
 .mortgage-section {
-    background: #e9fbee;
-    padding: 7rem;
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+        background: #e9fbee;
+        padding: 3rem 80px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
   .mortgage-section h1 {
     font: bold 2.5rem 'Arial', sans-serif;
@@ -107,4 +116,209 @@
 .box-design h2 {
     margin-bottom: 0 !important;
 }
+
+.img-dollar img {
+    width: 100%;
+}
+.img-dollar {
+    width: 50%;
+}
+.contant-text {
+    width: 45%;
+}
+.our-story {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.redefining {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+#text{
+    display:none;
+    }
+    .btn-container{
+      margin: auto;
+      height:44px;
+      width:166.23px;
+      
+    }
+    a:active{
+      color:#ffd323;
+    }
+    body{
+       background-color:aqua;
+    }
+    button{
+      user-select:none;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      cursor:pointer;
+      border:none;
+      padding:8px;
+      font-size:20px;
+      background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+      color:white;
+      font-family:cursive;
+      box-sizing:border-box;
+    }
+  
+
+
+
+
+// body {
+//     font-family: "Inter", sans-serif;
+//     background-color: #f1dadf;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+//     scroll-padding-block-start: 3.75rem;
+//   }
+  
+//   .Nav {
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+//     height: 3.75rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: rgba(0, 0, 0, 0.1);
+//     backdrop-filter: blur(28px);
+//     z-index: 10;
+//   }
+  
+//   .Nav > a {
+//     text-decoration: none;
+//     color: white;
+//     background: linear-gradient(45deg, #ff416c, #ff4b2b);
+//     padding: 0.5rem 1rem;
+//     border-radius: 999px;
+//     font-weight: bold;
+//   }
+  
+//   .Hero {
+//     display: grid;
+//     gap: 1rem;
+//     margin: 1rem;
+//   }
+  
+//   .Visual img {
+//     width: 100%;
+//     object-fit: cover;
+//     border-radius: 8px;
+//   }
+  
+//   .Content h3 {
+//     font-size: 1.5rem;
+//     margin: 0 0 0.5rem;
+//   }
+  
+//   .Content p {
+//     font-size: 1rem;
+//     line-height: 1.5;
+//     margin: 0;
+//   }
+  
+//   .SmallScreenContent p {
+//     background: black;
+//     color: white;
+//     text-align: center;
+//     padding: 0.5rem;
+//     margin: 0.25rem 0;
+//   }
+  
+//   .pagination {
+//     position: fixed;
+//     bottom: 2rem;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     display: flex;
+//     gap: 1rem;
+//   }
+  
+//   .pagination a {
+//     width: 1rem;
+//     height: 1rem;
+//     border: 2px solid hsl(347, 100%, 58%);
+//     border-radius: 50%;
+//   }
+  
+//   @keyframes reveal {
+//     to {
+//       visibility: visible;
+//     }
+//   }
+  
+//   @keyframes highlight {
+//     50% {
+//       background-color: hsl(347, 100%, 58%);
+//     }
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
