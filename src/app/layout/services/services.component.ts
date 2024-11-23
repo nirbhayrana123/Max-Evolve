@@ -11,11 +11,12 @@ import { CommonModule } from '@angular/common';
 export class ServicesComponent  {
 
 
-  activeTab: string = 'automotive'; // Default active tab
-isScrolled: any;
+  activeTab: string = 'automotive'; 
+  isScrolled: any;
   isMenuOpen: boolean | undefined;
-  // Method to set the active tab
   setActiveTab(tabId: string) {
     this.activeTab = tabId;
   } 
+
+ 
 }

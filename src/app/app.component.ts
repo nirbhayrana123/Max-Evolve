@@ -3,7 +3,7 @@ import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from './layout/footer/footer.component';
 import {  Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import * as AOS from 'aos';
+import AOS from 'aos';
 import { RouterOutlet } from '@angular/router';
 
 

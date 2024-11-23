@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './layout/main/home/home.component';
 import { ServicesComponent } from './layout/services/services.component';
 import { PrivacyComponent } from './layout/privacy/privacy.component';

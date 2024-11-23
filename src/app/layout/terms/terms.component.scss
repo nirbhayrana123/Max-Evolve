@@ -8,8 +8,7 @@
     justify-content: space-between;
 }
 .Legaly h2 {
-    font-family: Lora, sans-serif;
-    font-size: 50px;
+    font-size: 48px;
 }
 .Legal h1 {
     font-size: 25px;
@@ -22,8 +21,10 @@
 .overview-contant h5 {
     font-size: 30px;
     line-height: 45px;
-    
+}
 
+.overview-contant p {
+    max-inline-size: none;
 }
 .overview-contant {
     padding-top: 50px;

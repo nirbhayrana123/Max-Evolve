@@ -16,6 +16,10 @@
     font-weight: bold;
     color: #000000;
 }
+.bg-goals {
+    background-color: #fff;
+    padding-top: 40px;
+}
 .industries {
     background-color: #6aa1b3;
 }
@@ -125,3 +129,97 @@ span {
 //     0%{ transform: rotate(0deg); }
 //       100%{ transform: rotate(360deg); }	
 //   }
+
+/************how to ***************/
+
+
+:root {
+    --card-height: 40vw;
+    --card-margin: 4vw;
+    --card-top-offset: 1em;
+    --numcards: 4;
+    --outline-width: 0px;
+  }
+  .howtoworks {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  
+
+  
+  #card-1 {
+    --index: 1;
+  }
+  
+  #card-2 {
+    --index: 2;
+  }
+  
+  #card-3 {
+    --index: 3;
+  }
+  
+  #card-4 {
+    --index: 4;
+  }
+  
+  .card {
+    position: sticky;
+    top: 100px;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+    border-radius: 4rem;
+    margin: 20px 0px;
+  }
+  .work-it span {
+    position: absolute;
+    top: 30px;
+}
+  .work-it {
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    color: #131212;
+    border-radius: 3rem;
+    overflow: hidden;
+    display:flex;
+align-items: center;
+justify-content: space-between;
+    padding: 6.4em;
+  }
+  
+  .work-it > div {
+    grid-area: text;
+    width: 95%;
+    max-width: 800px;
+    place-self: center;
+    text-align: left;
+    display: grid;
+    gap: 1em;
+    place-items: start;
+  }
+  .work-it .content-stik.tow {
+    justify-content: end;
+}
+  .work-it > figure {
+    grid-area: img;
+    overflow: hidden;
+  }
+  
+  .work-it > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .4em;
+  }
+
+
+
+
+
+
+
+
+
+
+

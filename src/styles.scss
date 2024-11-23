@@ -1,17 +1,160 @@
-// @import "bootstrap/scss/bootstrap";
-// @import '~bootstrap-icons/font/bootstrap-icons.css';
 
-
-// @import "https://unpkg.com/open-props" layer(design.system);
-// @import "https://unpkg.com/open-props/normalize.dark.min.css" layer(base.normalize);
-// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap");
-// @import "https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css" layer(design.utilities);
 
 body{
-    background-color: #faf5e8;
+    background-color: #c6dae1!important;
     margin: 0;
     font-family: 'Suisse Intl';
 }
+
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Light.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Light.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-LightItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-LightItalic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Regular.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Regular.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Italic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Italic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Medium.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Medium.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-MediumItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-MediumItalic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Bold.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Bold.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-BoldItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-BoldItalic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Extrabold.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Extrabold.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-ExtraboldItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-ExtraboldItalic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Variable.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Variable.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-Variable.ttf') format('truetype');
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-VariableItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-VariableItalic.woff') format('woff'),
+       url('../public/assets/fonts/bespokeStencil_complete/Fonts/WEB/fonts/BespokeStencil-VariableItalic.ttf') format('truetype');
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+
+
+
+@font-face {
+  font-family: 'Zina-Regular';
+  src: url('../public/assets/fonts/zina_complete/Fonts/WEB/fonts/Zina-Regular.woff2') format('woff2'),
+       url('../public/assets/fonts/zina_complete/Fonts/WEB/fonts/Zina-Regular.woff') format('woff'),
+       url('../public/assets/fonts/zina_complete/Fonts/WEB/fonts/Zina-Regular.eot') format('eot'),
+       url('../public/assets/fonts/zina_complete/Fonts/WEB/fonts/Zina-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'Suisse Intl';
   src: url('../public/assets/fonts/suisseIntl/SuisseIntl.eot');
@@ -23,6 +166,13 @@ body{
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+table.boarding-info {
+  background: transparent;
+  border: none;
 }
 
 .financial {
@@ -47,7 +197,14 @@ body{
   padding: 10px 20px;
   margin-top: 10px;
 }
+p, h4, h5, h6, a{  font-family: 'BespokeStencil';
 
+}
+
+h1, h2, h3, .subhead{
+  // font-family: 'Zina-Regular';
+  font-family: 'BespokeStencil';
+}
 
 
   .logo img {
@@ -146,7 +303,7 @@ body{
   .center-content p {
     font-size: 20px;
     font-weight: 800;
-    color: #e9ee26;
+    color: #fff;
 }
   .rnw {
     display: flex;
@@ -163,11 +320,7 @@ body{
   border-radius: 6px;
   background: conic-gradient(from 0.584577deg at 50% 50%, rgba(0, 0, 0, 0.35) -24.66deg, rgba(255, 255, 255, 0.35) 0.25deg, rgba(0, 0, 0, 0.35) 50.63deg, rgba(0, 0, 0, 0.35) 51.97deg, rgba(255, 255, 255, 0.35) 88.12deg, rgba(0, 0, 0, 0.35) 142.5deg, rgba(255, 255, 255, 0.35) 196.87deg, rgba(0, 0, 0, 0.35) 256.87deg, rgba(255, 255, 255, 0.35) 300deg, rgba(0, 0, 0, 0.35) 335.2deg, rgba(0, 0, 0, 0.35) 335.34deg, rgba(255, 255, 255, 0.35) 360.25deg);
   }
-  .barcode svg {
-    padding-top: 79px;
-    margin-left: 29px;
-    height: 564px;
-}
+
 
   .boarding-pass {
     display: flex;
@@ -194,7 +347,7 @@ body{
 }
 
   .ticket-left {
-    background-color: #6aa1b3;
+    background-color: #001019;
     width: 70%;
     padding: 20px;
     display: flex;
@@ -206,13 +359,10 @@ body{
     display: flex;
     align-items: center;
 }
-body {
-  background-color: #dedede!important;
-}
 
   .barcode {
-    background-color: #087c99  ;
-    height: 648px;
+    background-color: #001019  ;
+    height: 700px;
     position: absolute;
     top: 0;
     left: 0;
@@ -226,7 +376,7 @@ body {
 
   .ticket-content h1 {
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 500;
     color: #121314;
     margin: 0;
 }
@@ -251,8 +401,8 @@ body {
   font-size: 35px;
   line-height: 90%;
   letter-spacing: -0.03em;
-  background: #087c99 ;
-  color: rgb(255 255 0);
+  background: #0a3971 ;
+  color: #fff;
   padding: 40px 0px;
   display: flex;
   gap: 22px;
@@ -273,14 +423,14 @@ body {
   color: #333;
 }
 
-/* Header styling */
 .boarding-info th {
   font-size: 12px;
-    color: #000000;
+    color: #fff;
     padding: 10px 0px;
     border-bottom: 1px solid #E0E0E0;
     text-align: left;
     font-weight: 600;
+    background-color: transparent!important;
 }
 .end {
   text-align: end !important;
@@ -299,14 +449,15 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
 .boarding-info td {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   padding: 10px 0px;
   text-align: left;
+  background-color: transparent!important;
 }
 
 /* Column styling */
 .boarding-info td {
-  color: #ffff01;
+  color: #fff;
 }
 
   .status p, .seat-group p {
@@ -325,9 +476,10 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
     justify-content: space-between;
 }
 .letsstared {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ text-align: center;
+}
+.letsstared h1{
+  color: #fff;
 }
 
   .details {
@@ -354,7 +506,7 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
   }
 
   .ticket-right {
-    background-color: #6aa1b3;
+    background-color: #001019;
     width: 30%;
     padding: 20px;
     display: flex;
@@ -365,7 +517,7 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
 
   .ticket-right p {
     font-size: 17px;
-    color: #ff8;
+    color: #fff;
     margin: 0;
     font-weight: 600;
 }
@@ -378,7 +530,7 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
   }
   .form-group label {
     font-size: 20px;
-    color: #ff8;
+    color: #fff;
     display: block;
     margin-bottom: 5px;
     font-weight: 800;
@@ -387,11 +539,12 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
     width: 100%;
     padding: 0px;
     font-size: 16px;
+    border-radius: 0px;
     border: none;
     border-bottom: 1px solid #b8b8b8;
     outline: none;
     transition: border-bottom-color 0.3s;
-    background-color: #6aa1b3;
+    background-color: #001019;
 }
   .form-group input:focus {
     border-bottom-color: #333;
@@ -441,7 +594,7 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
     left: 15px;
 }
 .slider-content p {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   line-height: 1.6;
   text-align: left;
@@ -478,7 +631,7 @@ h3.mt {
   padding-top: 30px;
 }
 .bg- {
-  background-color: #087c99;
+  background-color: #001019;
 }
 .user-name {
   padding-bottom: 10px;
@@ -508,21 +661,21 @@ h3.mt {
 
 
 .text-section {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 90%;
 }
 
 .title {
   font-size: 3rem;
-  color: #333;
+  color: #093242;
   margin-bottom: 50px;
-  line-height: 1;
+  line-height: 65px;
   text-align: center;
 }
 
 .description {
-font-size: 18px;
-  color: #000000;
+  font-size: 20px;
+  color: #ffffff;
   line-height: 2;
   text-align: left;
   max-width: 700px;
@@ -568,13 +721,19 @@ font-size: 18px;
 }
 .text-section h4 {
   font-size: 30px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 10px;
   font-style: italic;
   margin-top: 20px;
+  color: #fff;
 }
 
-
+.flip-card .slider-content h3 {
+  font-size: 25px;
+}
+.flip-card .slider-content p{
+  font-size: 15px;
+}
 
   /**********************************Amit End****************************************/
 
@@ -870,7 +1029,7 @@ pound{
   min-height: 210px;
 }
 .box-bg {
-  background-color: #6aa1b3;
+  background-color: #0a3971;
 }
 .loop-slider {
   position: relative;
@@ -905,13 +1064,13 @@ pound{
 
 .bottom-box h5 {
   text-align: center;
-  font-size: 17px;  
+  font-size: 25px;  
   color: #fff;
   margin: 0 auto;
 }
 h3.journy {
   font-size: 3rem;
-  color: #000000;
+  color: #fff;
   margin-bottom: 30px;
   opacity: 1;
   text-align: center;
@@ -1269,7 +1428,7 @@ background-color: #1c76ff;
 }
 .slider-content h3 {
   color: #fff;
-  font-size: 20px;
+  font-size: 36px;
   margin-bottom: 15px;
   font-style: italic;
 }
@@ -1457,7 +1616,7 @@ background-color: #1c76ff;
 }
 .box-design svg {
   position: absolute;
-  right: 377px;
+  right: 345px;
   width: 21px;
 }
 .box-design {
