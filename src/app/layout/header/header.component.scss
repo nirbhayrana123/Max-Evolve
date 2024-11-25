@@ -70,3 +70,100 @@ header.top-header {
   .footer-nov li.menu-item {
     padding: 0;
   }
+
+
+
+
+  /********************************footer csss**************************/
+
+  
+.boarding-pass {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
+  transition: transform 150ms ease-out;
+  will-change: transform;
+}
+
+.privacy-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 130%;
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: 8px 8px 0px 1px #0000FF;
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid #000;
+  z-index: 999;
+}
+.mega-menu-column {
+  padding: 0 0px;
+}
+.privacy-menu a {
+  color: #fff;
+  display: block;
+  padding: 8px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #fff;
+}
+
+.menu-item:hover .mega-menu {
+  display: block;
+}
+
+.barcode svg rect {
+  fill: #fff;
+}
+
+
+.footer-nov a.link.style-2 {
+  padding: 0;
+}
+.footer-nov li.menu-item {
+  padding: 0;
+}
+.title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-align: center;
+}
+.flight-info span {
+  color: #fff;
+  font-weight: 700;
+}
+.Privacy p {
+  color: #fff;
+  width: 100%;
+}
+
+.notes {
+  margin-top: 20px;
+}
+.notes p {
+  color: #fff;
+  font-size: 14px;
+  max-inline-size: fit-content;
+}
+
+.barcode {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.barcode svg {
+  height: 100%;
+  margin: auto auto;
+}
+
+.footer-nov .privacy-menu {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+
+
+/***********************footer end**********************************/

@@ -16,10 +16,6 @@ import { DatePipe } from '@angular/common';
 export class FooterComponent implements AfterViewInit, OnInit {
 
   
-
-
-
-
   currentYear: number = new Date().getFullYear();
   todayDate: string = '';
 

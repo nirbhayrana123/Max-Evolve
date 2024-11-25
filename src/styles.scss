@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #c6dae1!important;
+  background-color: #a4b7ca!important;
     margin: 0;
     font-family: 'Suisse Intl';
 }
@@ -243,7 +243,7 @@ h1, h2, h3, .subhead{
 .btn-schedule span {
   font-size: 14px;
   align-items: center;
-  background-color: #63cfbf;
+  background-color: #1e76dd;
   border: 1px solid #000;
   border-radius: 30px;
   display: flex;
@@ -253,6 +253,8 @@ h1, h2, h3, .subhead{
   position: relative;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 2;
+  color: #fff;
+    font-weight: 700;
 }
 
   .btn-schedule:hover::after {
@@ -293,9 +295,7 @@ h1, h2, h3, .subhead{
   position: relative;
 }
   /*************************Footer css******************/
-  body { 
-    background-color: #fff;
-  }
+ 
   // h1, h2, h3, h4, h5, h6, li, a, p{
   //   font-family: "Playfair Display", serif;
   // }
@@ -401,8 +401,8 @@ h1, h2, h3, .subhead{
   font-size: 35px;
   line-height: 90%;
   letter-spacing: -0.03em;
-  background: #0a3971 ;
-  color: #fff;
+  background: #a4b7ca; ;
+  color: #000000;
   padding: 40px 0px;
   display: flex;
   gap: 22px;
@@ -575,7 +575,7 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
     transition: transform .5s cubic-bezier(.19,1,.22,1);
     width: 100%;
     z-index: 1;
-    background-color: #76dbd1;
+    background-color: #ffb800;
 }
   /**********************************Amit****************************************/
   .banner {
@@ -631,7 +631,7 @@ h3.mt {
   padding-top: 30px;
 }
 .bg- {
-  background-color: #001019;
+  background-color: #172c54;
 }
 .user-name {
   padding-bottom: 10px;
@@ -815,11 +815,11 @@ h3.mt {
 }
 .box-padding {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 .box-design {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .main-image-wrapper {
@@ -1070,8 +1070,8 @@ pound{
 }
 h3.journy {
   font-size: 3rem;
-  color: #fff;
-  margin-bottom: 30px;
+  color: #000;
+  margin-bottom: 0px;
   opacity: 1;
   text-align: center;
 }
@@ -1774,9 +1774,7 @@ nav {
 .menu-item {
   padding: 5px 10px!important
 }
-h3.journy {
-  margin-bottom: 30px;
-}
+
 .stepscontant {
   width: 100%;
 }
@@ -1799,9 +1797,6 @@ h3.journy {
 }
 .box-padding {
   padding: 3rem 2rem;
-}
-h3.journy {
-  font-size: 40px;
 }
 h3.mt {
   color: black !important;
@@ -1861,9 +1856,6 @@ div#automotive img {
 .qutes {
   top: 13px;
   left: 40px;
-}
-h3.journy  {
-  margin-bottom: 60px;
 }
 .center-content h2 {
   font-size: 40px;
@@ -2044,9 +2036,6 @@ svg.PrimaryButton__ButtonArrow-sc-r4xqiq-2.gfXRli {
 .text-section {
   margin-bottom: 0px;
   width: 100%;
-}
-h3.journy {
-  font-size: 30px;
 }
 .loop-slider .item {
   width: 100%;
